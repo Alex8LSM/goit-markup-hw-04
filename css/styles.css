@@ -90,12 +90,20 @@ img {
   flex-direction: column;
 }
 
+.icon-svg .color-one {
+  /* fill: #212121; */
+  fill: red;
+}
+.icon-svg .color-two {
+  fill: #2196f3;
+}
 /*header*/
 
 .upper-line {
   border-bottom: 1px solid #ececec;
   padding: 25px 0;
 
+  min-width: 950px;
   display: flex;
 }
 
@@ -117,6 +125,26 @@ img {
   font-weight: 500;
 }
 
+.email-icon {
+  height: 12px;
+  width: 16px;
+}
+
+.phone-icon {
+  height: 16px;
+  width: 10px;
+}
+
+.email-icon,
+.phone-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+/* .email-icon:hover,
+.phone-icon:hover {
+   fill: var(--accent)
+} */
 .link.active {
   color: var(--accent);
 }
@@ -182,6 +210,11 @@ footer {
 
 .cap {
   padding: 200px 0;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/Cap-bg-Img.jpg);
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cap-title {
@@ -213,6 +246,32 @@ footer {
 .cap-btn:hover,
 .cap-btn:focus {
   background: var(--btn-hover);
+}
+
+.feature {
+  display: block;
+  height: 120px;
+  width: 270px;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+  background-color: var(--sec-section-bgc);
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.detail {
+ 
+}
+
+.punctuality{
+ 
+}
+.planning {
+ 
+}
+.technologies {
+ 
 }
 
 .our-works.section {
@@ -275,6 +334,15 @@ footer {
   font-size: 36px;
   line-height: 1.167;
   margin-bottom: 50px;
+}
+
+.customers-cards .list {
+  flex-basis: calc(100% / 6 - 30px);
+  margin-left: 30px;
+}
+
+.customers-cards {
+  margin-left: -30px;
 }
 
 /*Стилы файлу portfolio*/
@@ -341,3 +409,15 @@ footer {
 .portfolio-card .title {
   margin-bottom: 4px;
 }
+
+/* .icon {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background-image: url();
+  background-color: #fff;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+} */
