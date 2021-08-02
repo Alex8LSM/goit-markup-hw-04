@@ -17,6 +17,10 @@
   --hero-text: #ffffff; /* Колір тексту героя */
   --footer-contacts: rgba(255, 255, 255, 0.6); /*колір контактів в підвалі */
   --ft-text: #ffffff; /* Колір тексту адреси у футері*/
+
+  --color-one: #212121; /*SVG Цвет 1*/
+  --color-two: #2196f3; /*SVG Цвет 2*/
+  --color-three: #afb1b8; /*SVG Цвет 3 */
 }
 
 /*ЗАГАЛЬНІ СТИЛІ*/
@@ -90,13 +94,14 @@ img {
   flex-direction: column;
 }
 
-.icon-svg .color-one {
-  /* fill: #212121; */
-  fill: red;
+.link.icon {
+  display: block;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  outline: 1px solid blue;
 }
-.icon-svg .color-two {
-  fill: #2196f3;
-}
+
 /*header*/
 
 .upper-line {
@@ -141,10 +146,6 @@ img {
   fill: currentColor;
 }
 
-/* .email-icon:hover,
-.phone-icon:hover {
-   fill: var(--accent)
-} */
 .link.active {
   color: var(--accent);
 }
@@ -205,6 +206,13 @@ footer {
 .address .list {
   margin-top: 9px;
 }
+.social-container {
+  outline: 1px solid yellow;
+}
+
+.social-container .title {
+  color: var(--ft-text);
+}
 
 /*Стилі файлу index */
 
@@ -260,20 +268,6 @@ footer {
 
 }
 
-.detail {
- 
-}
-
-.punctuality{
- 
-}
-.planning {
- 
-}
-.technologies {
- 
-}
-
 .our-works.section {
   padding-top: 0px;
 }
@@ -288,7 +282,7 @@ footer {
   background-color: var(--sec-section-bgc);
 }
 
-.our-team .list {
+.our-team .list.card {
   background-color: var(--pri-section-bgc);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -310,6 +304,15 @@ footer {
   padding: 30px 0;
 }
 
+/* .soc-net {
+  display: block;
+  /* margin-bottom: 30px;
+  padding: 25px 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 44px;
+  height: 44px;
+} */
 .main-content .title {
   color: var(--pri-title);
 }
@@ -318,7 +321,8 @@ footer {
   width: 270px;
 }
 
-.features .title {
+.features .title, 
+.social-box .title {
   text-transform: uppercase;
   line-height: 1.143;
   font-size: inherit;
@@ -343,6 +347,13 @@ footer {
 
 .customers-cards {
   margin-left: -30px;
+}
+
+.companies {
+  display: block;
+  width: 170px;
+  height: 92px;
+  outline: 1px solid red;
 }
 
 /*Стилы файлу portfolio*/
@@ -409,15 +420,3 @@ footer {
 .portfolio-card .title {
   margin-bottom: 4px;
 }
-
-/* .icon {
-  display: inline-block;
-  height: 30px;
-  width: 30px;
-  background-image: url();
-  background-color: #fff;
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 50%;
-} */
