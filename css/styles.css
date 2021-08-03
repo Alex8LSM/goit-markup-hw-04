@@ -380,7 +380,6 @@ footer {
   width: 170px;
   height: 92px;
   border: 1px solid var(--color-three);
-  box-sizing: border-box;
   border-radius: 4px;
   padding: 16px 32px;
 }
@@ -388,7 +387,6 @@ footer {
 .company-box:hover, .company-box:focus {
   --color-three: var(--accent);
 }
-
 
 .company-icon {
   width: 106px; 
@@ -448,7 +446,6 @@ footer {
   flex-basis: calc(100% / 3 - 30px);
   margin-top: 30px;
   margin-left: 30px;
-
 }
 
 .portfolio-cards {
@@ -461,9 +458,11 @@ footer {
   margin-bottom: 4px;
 }
 
+.portfolio-cards .link {
+  display: block;
+}
+
 .portfolio-cards .link:focus,
 .portfolio-cards .link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  border: 5px solid darkorange;
-  color: red;
 }
