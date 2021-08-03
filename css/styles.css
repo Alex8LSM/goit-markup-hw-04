@@ -109,11 +109,6 @@ img {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.social-icon {
-  width: 20px;
-  height: 20px;
-}
-
 .icon:hover, .icon:focus {
   --color-three: var(--hero-text);
   background-color: var(--accent);
@@ -145,16 +140,6 @@ img {
   letter-spacing: 0.02em;
   line-height: 1.172;
   font-weight: 500;
-}
-
-.email-icon {
-  height: 12px;
-  width: 16px;
-}
-
-.phone-icon {
-  height: 16px;
-  width: 10px;
 }
 
 .email-icon,
@@ -283,13 +268,13 @@ footer {
   background: var(--btn-hover);
 }
 
-.feature {
+.feature-box {
   display: block;
-  height: 120px;
-  width: 270px;
   margin-bottom: 30px;
   padding: 25px 100px;
   background-color: var(--sec-section-bgc);
+  width: 270px;
+  height: 120px;
 }
 
 .our-works.section {
@@ -388,10 +373,6 @@ footer {
   --color-three: var(--accent);
 }
 
-.company-icon {
-  width: 106px; 
-  height: 60px;
-}
 /*Стилы файлу portfolio*/
 
 .portfolio .title {
