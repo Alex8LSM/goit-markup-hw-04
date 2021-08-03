@@ -105,11 +105,12 @@ img {
 }
 
 .footer .icon {
-   --color-three: var(--hero-text);
-    background-color: rgba(255, 255, 255, 0.1);
+  --color-three: var(--hero-text);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-.icon:hover, .icon:focus {
+.icon:hover,
+.icon:focus {
   --color-three: var(--hero-text);
   background-color: var(--accent);
 }
@@ -231,7 +232,7 @@ footer {
 .cap {
   padding: 200px 0;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/Cap-bg-Img.jpg);
+    url(../images/cap-bg-img.jpg);
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -332,7 +333,7 @@ footer {
   width: 270px;
 }
 
-.features .title, 
+.features .title,
 .social-container .title {
   text-transform: uppercase;
   line-height: 1.143;
@@ -369,7 +370,8 @@ footer {
   padding: 16px 32px;
 }
 
-.company-box:hover, .company-box:focus {
+.company-box:hover,
+.company-box:focus {
   --color-three: var(--accent);
 }
 
@@ -406,7 +408,8 @@ footer {
   background-color: var(--accent);
   color: var(--sec-btn-text);
 
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12)
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filters .list:not(:first-child) {
@@ -445,5 +448,6 @@ footer {
 
 .portfolio-cards .link:focus,
 .portfolio-cards .link:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
